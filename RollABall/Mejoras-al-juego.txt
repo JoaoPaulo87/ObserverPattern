@@ -1,0 +1,8 @@
+- Un nivel mas grande. Que no sea solo un cuadrado gigante, sumarle con habitaciones y laberintos. Tranqui, sin cebarse.(1/2 dia)
+- Cuando ganes, la pelota no se puede mover o que desaparezca, que no se pueda seguir jugando con la pelota.(1/2 dia)
+- Agregar cubos de color rojos que si los tocas, perdes, a la primera. Los rojos no se suman a la cuenta.(1 dia) 
+- En la escena testing hacer un obj pickeable de un color verde y cuando lo agarre, haga otra cosa, es especial por ende tiene que hacer
+otra cosa y no contar en el count. Tipo que se agarra y se abra una puerta o habilite una entrada a otra habitacion, algo asi.(1 1/2 dia)
+- Si todo lo del obj verde anda bien, implementar en el lvl 1. Tiene que haber un obj verde solo que abra una puerta.
+- Poner un obj rojo pickeable que se mueva cerca de una puerta cosa de tener que esquivarlo para pasarlo.(2 dias)
+- Hacer "charcos" en el piso que cuando el player pase por arriba aumente la velocidad, y cuando salga, desacelere.(1 dia)

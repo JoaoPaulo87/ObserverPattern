@@ -1,0 +1,142 @@
+Feedback general del proyecto:
+------------------------------
+
+Estas son algunas cosas que vi en general del proyecto, la organizacion, los tiempoos y demas.
+
+1 - Lo primero que note es que el .gitignore no esta funcionando en el repositorio. 
+Te sugeriria tratar de enfocarte en el funcionamiento de git y del .gitignore y reinicializar el repositorio desde cero. 
+
+2 - Cuando arregles el .gitignore la carpeta Builds ya no va a estar en el repositorio, no deberia estar
+
+3 - La carpeta de Google Drive con las builds es genial, una buena manera de compartir lo que vas haciendo. 
+Lo que yo haria es crear una carpeta a parte para cada build y ponerle versiones, como para ir midiendo el progreso. 
+Podriamos partir de esta primera build como la build 1.0 y asi ir subiendo (Tambien podrias meter adentro de cada carpeta, 
+el documento con el feedback asi vamos siguiendo bien el progreso de build a build).
+
+4 - La organizacion en general del repositorio esta muy bien, al igual como los commits descriptivos y en ingles. 
+Lo que yo haria para la proxima version (2.0) es crear una branch a parte de master y trabajar ahi todos los requerimientos que entren en esa version, 
+y una vez que se haya terminado con todo, mergearla a master y armar las builds solo de master.
+
+5 - En termino de tiempos de lo que habiamos planificado para esta iteracion, estoy sorprendido ya que (creo) te llevo menos de lo estimado. 
+Es importante que hagas este trackeo personal para que las siguientes estimaciones sean mas precisas. 
+
+6 - Vi que en el repositorio hay un archivo con las notas que planeamos, eso yo no lo pondria ahi. 
+De ultima podes crear un archivo Readme.md para el repositorio donde adjuntas las cosas que salen en determinada version o algo asi.
+
+
+Feedback de la jugabilidad:
+---------------------------
+
+Feedback general de lo que me parecio el juego, las mejoras y como lo senti *personalmente hablando*.
+
+1 - Lo primero que quiero destacar es que con respecto al tutorial, el juego avanzo bastante. 
+Todo lo que habiamos propuesto lo lograste muy bien y se ve y se siente realmente diferente a lo del tutorial. 
+
+2 - Me parecio muy bueno el tradeback que hiciste a la hora de mejorar el nivel, ya que no te entusiasmaste demasiado en perder tiempo con la geometria 
+y aun asi lograste algo interesante y divertido para jugar. 
+
+3 - El movimiento de la esfera parece estar bien ajustado, se siente comodo. Ni muy rapido ni muy lento. Lo que si, al tener un color plano, 
+la esfera no parece rotar. Es decir, cuando me muevo, como jugador, no veo que la esfera rote. 
+Es raro. Como podriamos solucionar esto? (Espero una propuesta nomas, no que implementes algo)
+
+4 - Me gusta el diseño del nivel, pero en algunas esquinas noto como ciertas desproligidades. Estaria bueno arreglarlas, ya que asi como estan le sacan 
+solidez al nivel en mi opinion.
+
+5 - La UI donde figura la cuenta de las cosas que vas agarrando esta chiquita. Si no sabes que existe, no te das cuenta que esta ahi. 
+Habria que agrandarla o ponerle algo como para que destaque. Tal vez puedas armar una propuesta tambien de esto, a ver como lo podemos solucionar.
+
+6 - Con respecto al charco de agua que cambia la velocidad del player, se siente raro. 
+No siento que sea algo que me vaya a representar una dificultad al momento de recorrer el nivel, ya que cambia muy poquito la velocidad. 
+No se siente como una trampa sino como algo que simplemente esta ahi y ya. Cambia tu velocidad pero no te pone en ningun tipo de riesgo ni nada. 
+Habria que buscar alguna manera de reutilizar el recurso, como posicionarlo en otro lado como para que tengas que realmente tener cuidado cuando estes ahi. 
+Tambien me paso que no siento que me transmita la sensacion como de que mee patino, sino simplemente como un acelerador que aumenta la velocidad a la que me muevo.
+ 
+7 - Me gusto el tunel, definitivamente es una de las mejores cosas que tiene el nivel. En una punta hay un cubo rojo y como que te quedas pensando 
+que tendria que haber una forma de entrar pero que claramente no podoes al principio, y eso te llama a explorar el nivel. Muy bien logrado. 
+
+8 - Si bien tenes que agarrar el cubo verde para abrir la puerta, medio como que no se distingue de los amarillos, tal vez por el color. 
+Capaz habria que distinguirlo mas. 
+
+9 - El tema de abrir la puerta con el cubo verde se siente como algo que pasa por accidente casi. Como que empezas, no podes entrar al tunel,
+okey, pero si podes explorar el nivel. Te vas, exploras el nivel y vas agarrando todo. De repente agarras todos los cubito que podes y cuando volves al centro,
+la puerta para entrar al pasillo esta abierta y no entendes por que. Es medio raro y hay bastantes razones por las que pasa. 
+
+En base a todo esto estaria bueno armar una propuesta para ver como se puede solucionar. Hay varias maneras de solucionarlo.
+	9.1 - No existe una relacion visual entre la puerta y el cubo verde que la abre. De hecho para agarrar el cubo verde, te tenes que ir lejos de la puerta 
+y no llegas a 	ver que cuando agarras el cubo desaparece la puerta. Por ende el jugador no puede construir esa relacion cubo verde - puerta. 
+	9.2 - La puerta desaparece, entonces cuando volves al lugar de la puerta parece como que un pedazo del nivel desaparecio y no entendes como. 
+	9.3 - La puerta no tiene ningun factor diferencial del resto del nivel, entonces te cuesta saber que no es una pared.
+	9.4 - A priori, no se entiende por que el cubo verde es diferente de los demas.
+
+10 - El cubo rojo que se mueve en la entrada de la parte violeta del nivel tiene un movimiento genial. Muy bien logrado. 
+
+11 - Cuando perdes o ganas, los cubos siguen rotando. Eso se ve raro. 
+
+12 - Estaria bueno que exista una manera de saber cuantos cubitos en total tenes que agarrar para ganar, desde el comienzo. Que opinas? Como podriamos solucionar esto?
+
+
+Posibles mejoras:
+-----------------
+
+
+13 - Cuando gano o pierdo, me gustaria tener una manera de reintentar el nivel. Como reiniciar el juego. 
+Tambien me gustaria tener la opcion de salir si es que ya no quiero continuar. 
+
+14 - Algo que se me ocurrio mientras jugaba es que me senti muy a salvo todo el tiempo ya que todo el nivel tiene bordes que evitan que me caiga. 
+Me gustaria que haya alguna parte del nivel en donde tengas que ser cuidadoso con tus movimientos, que el nivel te obligue a serlo, tal vez por riesgo a 
+que te caigas o algo asi. Capaz en un segundo nivel.
+
+
+Feedback del codigo:
+--------------------
+
+Feedback mas tecnico relacionado con la estructura, legibilidad y performance del codigo.
+-----------------------------------------------------------------------------------------
+
+
+1 - Las cosas que no son de testing, es decir que se estan usando en el nivel principal, deberiamos sacarlas de las carpetas de testing. 
+Es importante mantener el proyecto ordenado.
+
+2 - Los objetos en la jerarquia aun tienen nombres de testing (como TestingCollider). Si ya estan en la escena principal, quiere decir que ya no son de testing. 
+Por ende deberian tener nombres descriptivos.
+
+3 - Hay un objeto que engloba toda la geometria del nivel que se llama Playground, dentro de ese objeto deberia estar englobada toda la geometria del nivel, 
+bien organizada. De lo contrario la jerarquia se puede complejizar demasiado. 
+
+4 - En la jerarquia existe un objeto que engloba a todos los PickUps, dentro de ese objeto deberian estar englobados todos los pickups independientemente del tipo que
+sean. Si se quiere se puede separar a los pickups de diferentes tipos, con mas objetos. De esa manera creamos una jerarquia de objetos pickups mas organizada. 
+
+5 - Veo que para implementar los diferentes textos de ganar y de perder, se usaron dos objetos de texto diferente. Esto se puede mejorar usando un solo objeto 
+de texto para ocupar menos memoria, y modificar lo que ese objeto muestra (el texto) desde el codigo. De esta manera existiria un solo objeto en la pantalla, 
+al cual nosotros le escribiriamos lo que quisieramos. Esto es mejor que el caso contrario en el que tenes que mostrar 5000 textos diferentes, y tendrias que usar 5000 
+objetos diferentes de tipo Text.
+ 
+6 - En el script RedPickUpsInMovement.cs no se esta usando el puntero this. Tambien veo que para las variables se usan nombres poco descriptivos como v. 
+Es importante usar nombres descriptivos para cada cosa del codigo. 
+
+7 - En el script TestingCollider.cs hay codigo comentado que ya no sirve, tampoco se esta usando el puntero this y se estan usando nombres poco descriptivos para las 
+variables como pc. Otra cosa que observe es que el if de las llaves del if de la linea 17 estan mal tabuladas. Es importante ser prolijo y atento con este tipo de 
+cosas en el codigo. 
+
+8 - El script TestingCollider.cs no esta funcionando bien. El GetComponent deberia hacerse en ambos casos cuando el player entra y cuando sale. Y la referencia no 
+deberia almacenarse en una variable miembro de la clase dado a que almacenamos la referencia con la que vamos a trabajar permanentemente y actuamos sobre el 
+mismo player independientemente de con que colisionamos (en el caso del OnTriggerExit, seguimos trabajando con la variable anterior y eso no esta exactamente bien).
+
+9 - En el script CameraController.cs no se esta usando el puntero this.
+
+10 - En el script PlayerController.cs no se esta usando el puntero this. El metodo setMovementSpeed comienzca con minuscula. La variable count no tiene un nombre 
+descriptivo ya que no se que tipo de count es, o que es lo que esta contando.
+
+11 - El script Rotator.cs tiene comentarios que no sirven. Tampoco se usa el puntero this.
+
+
+Notas:
+------
+
+- Proceso ordenado, iterativo e incremental.
+
+- Cuando haya terminado el build lo muestro y espero el feedback. Luego se filtran los feedbacks en ideas. Luego cuando haya que modificar features del juego, 
+primero se crea una propuesta de cambio(mejorar, añadir, modificar o eliminar algun elemento del juego), si es aceptada, esa propuesta se descompone en 
+tareas(uso del trello), se hacen, se aplican y comienza de nuevo este ciclo
+
+- Cada version de build debe tener detalladamente cuales fueron los cambios implementados.
